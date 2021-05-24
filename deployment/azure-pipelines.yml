@@ -1,0 +1,60 @@
+schedules:
+  - cron: '*/5 07-19 * * 1-5'
+    displayName: Every 5 minutes between 07 and 19 hours
+    branches:
+      include:
+        - master
+    always: true
+
+trigger:
+  branches:
+    include:
+      - master
+
+pr:
+  branches:
+    include:
+      - '*'
+
+variables:
+  - group: XXXXXXXX_engineering
+  - name: accountId
+    value: 1234567890
+
+stages:
+  - stage: integration
+    displayName: Run assistant
+    jobs:
+      - job:
+        pool:
+          vmImage: 'ubuntu-latest'
+        steps:
+          - task: UseNode@1
+            inputs:
+              version: '14.x'
+              checkLatest: false
+
+          - bash: |
+              bash ./dev/env_config.sh
+            displayName: Env config
+
+          - bash: |
+              echo $CREDENTIALS >> credentials.json
+            displayName: Load credentials
+            env:
+              CREDENTIALS: $(GCP-gtm-publishing-assistant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+
+          - bash: |
+              node -v
+              node src/index.js --account=1234567890 --container=12345678
+            displayName: CI run
+            condition: in(variables['Build.Reason'], 'IndividualCI', 'PullRequest', 'Manual')
+            env:
+              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-publishing-assistant)
+
+          - bash: |
+              node src/index.js --account=$(accountId) --container=12345678
+            displayName: Sheduled run
+            condition: eq(variables['Build.Reason'], 'Schedule')
+            env:
+              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-publishing-assistant)

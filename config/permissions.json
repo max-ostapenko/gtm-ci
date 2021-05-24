@@ -1,0 +1,400 @@
+{
+  "Engineers": {
+    "entities": {
+      "tag": {
+        "ua": {
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "trigger": {
+        "click": {
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "variable": {
+        "ua": {
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "folder": {
+        "19": {
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      }
+    }
+  },
+  "HeadQuarters": {
+    "entities": {
+      "tag": {
+        "flc": {
+          "name": "Floodlight Counter",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "fls": {
+          "name": "Floodlight Sales",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "sp": {
+          "name": "Google Ads Remarketing",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "awct": {
+          "name": "Google Ads Conversion Tracking",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "bzi": {
+          "name": "Linkedin Insight",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }, 
+        "cvt_11774905_886": {
+          "name": "TradeDesk Template",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }, 
+        "cvt_11774905_1073": {
+          "name": "Facebook Template",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "trigger": {
+        "pageview": {
+          "name": "Page View",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "domReady": {
+          "name": "DOM Ready",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "windowLoaded": {
+          "name": "Window Loaded",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "customEvent": {
+          "name": "Custom Event",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "variable": {
+        "f": {
+          "name": "HTTP Referrer",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "u": {
+          "name": "URL",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "jsm": {
+          "name": "Custom JavaScript",
+          "added": false,
+          "updated": true,
+          "deleted": false
+        },
+        "smm": {
+          "name": "Lookup Table",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "remm": {
+          "name": "RegEx Table",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "folder": {
+        "19": {
+          "name": "AMQ",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      }
+    }
+  },
+  "personalization": {
+    "entities": {
+      "tag": {
+        "html": {
+          "name": "Custom HTML",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "trigger": {
+        "pageview": {
+          "name": "Page View",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "domReady": {
+          "name": "DOM Ready",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "windowLoaded": {
+          "name": "Window Loaded",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "customEvent": {
+          "name": "Custom Event",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "click": {
+          "name": "All Clicks",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "linkClick": {
+          "name": "Link Clicks",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "elementVisibility": {
+          "name": "Element Visibility",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "scrollDepth": {
+          "name": "Scroll Depth",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "historyChange": {
+          "name": "History Change",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "variable": {
+        "f": {
+          "name": "HTTP Referrer",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "u": {
+          "name": "URL",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "jsm": {
+          "name": "Custom JavaScript",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "smm": {
+          "name": "Lookup Table",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "remm": {
+          "name": "RegEx Table",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "k": {
+          "name": "1st Party Cookie",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "v": {
+          "name": "Data Layer Variable",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "j": {
+          "name": "JavaScript Variable",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "d": {
+          "name": "DOM Element",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "vis": {
+          "name": "Element Visibility",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "c": {
+          "name": "Constant",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "e": {
+          "name": "Custom Event",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "r": {
+          "name": "Random Number",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "folder": {
+        "517": {
+          "name": "Adobe Target",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      }
+    }
+  },
+  "media": {
+    "entities": {
+      "tag": {
+        "html": {
+          "name": "Custom HTML",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "trigger": {
+        "pageview": {
+          "name": "Page View",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "domReady": {
+          "name": "DOM Ready",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "windowLoaded": {
+          "name": "Window Loaded",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "customEvent": {
+          "name": "Custom Event",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "variable": {
+        "u": {
+          "name": "URL",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "jsm": {
+          "name": "Custom JavaScript",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "k": {
+          "name": "1st Party Cookie",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "v": {
+          "name": "Data Layer Variable",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "j": {
+          "name": "JavaScript Variable",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "c": {
+          "name": "Constant",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        },
+        "e": {
+          "name": "Custom Event",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      },
+      "folder": {
+        "958": {
+          "name": "Salesforce_DMP",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }, 
+        "517": {
+          "name": "Adobe Target",
+          "added": true,
+          "updated": true,
+          "deleted": true
+        }
+      }
+    }
+  }
+}
