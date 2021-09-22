@@ -4,7 +4,7 @@ schedules:
     branches:
       include:
         - master
-    always: true
+    always: "true"
 
 trigger:
   branches:
@@ -42,7 +42,7 @@ stages:
               echo $CREDENTIALS >> credentials.json
             displayName: Load credentials
             env:
-              CREDENTIALS: $(GCP-gtm-publishing-assistant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+              CREDENTIALS: $(GCP-gtm-ci-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
 
           - bash: |
               node -v
@@ -50,11 +50,11 @@ stages:
             displayName: CI run
             condition: in(variables['Build.Reason'], 'IndividualCI', 'PullRequest', 'Manual')
             env:
-              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-publishing-assistant)
+              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-ci)
 
           - bash: |
               node src/index.js --account=$(accountId) --container=12345678
             displayName: Sheduled run
             condition: eq(variables['Build.Reason'], 'Schedule')
             env:
-              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-publishing-assistant)
+              SLACK_WEBHOOK_URL: $(SlackWebhookURL-gtm-ci)
