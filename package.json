@@ -16,7 +16,7 @@
   "dependencies": {
     "@slack/webhook": "6.1.0",
     "googleapis": "97.0.0",
-    "yargs-parser": "21.0.1"
+    "yargs-parser": "21.1.0"
   },
   "devDependencies": {
     "prettier": "2.6.0",
