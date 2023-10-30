@@ -14,7 +14,7 @@
     "continuous integration"
   ],
   "dependencies": {
-    "@slack/webhook": "6.1.0",
+    "@slack/webhook": "7.0.0",
     "googleapis": "97.0.0",
     "yargs-parser": "21.1.0"
   },
